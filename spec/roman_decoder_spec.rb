@@ -1,6 +1,7 @@
 require 'roman_decoder'
 
 describe 'roman_decoder' do
+  # test all the duples
   it 'returns 900 when passed CM' do
     expect(roman_decoder("CM")).to eq 900
   end
@@ -13,6 +14,7 @@ describe 'roman_decoder' do
   it 'returns 9 when passed IX' do
     expect(roman_decoder("IX")).to eq 9
   end
+  # test the singles
   it 'returns 1000 when passed M' do
     expect(roman_decoder("M")).to eq 1000
   end
@@ -37,6 +39,8 @@ describe 'roman_decoder' do
   it 'returns 3 when passed III' do
     expect(roman_decoder("III")).to eq 3
   end
-
-
+  # test combos
+  it 'returns 1971 when passed MCMLXXI' do
+    expect(roman_decoder("MCMLXXI")).to eq 1971
+  end
 end

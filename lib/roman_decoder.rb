@@ -22,31 +22,31 @@ def roman_decoder(roman)
       arabic += 4
     end
     if roman.slice("M") != nil
-      roman.slice("M")
+      roman.slice!("M")
       arabic += 1000
     end
     if roman.slice("D") != nil
-      roman.slice("D")
+      roman.slice!("D")
       arabic += 500
     end
     if roman.slice("C") != nil
-      roman.slice("C")
+      roman.slice!("C")
       arabic += 100
     end
     if roman.slice("L") != nil
-      roman.slice("L")
+      roman.slice!("L")
       arabic += 50
     end
     if roman.slice("X") != nil
-      roman.slice("X")
+      roman.slice!("X")
       arabic += 10
     end
     if roman.slice("V") != nil
-      roman.slice("V")
+      roman.slice!("V")
       arabic += 5
     end
     if roman.slice("I") != nil
-      roman.slice("I")
+      roman.slice!("I")
       arabic += 1
     end
   end
