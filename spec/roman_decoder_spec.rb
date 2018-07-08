@@ -1,4 +1,4 @@
-require 'roman_decoder'
+require 'roman_decoder2'
 
 describe 'roman_decoder' do
   # test all the duples
@@ -42,5 +42,8 @@ describe 'roman_decoder' do
   # test combos
   it 'returns 1971 when passed MCMLXXI' do
     expect(roman_decoder("MCMLXXI")).to eq 1971
+  end
+  it 'returns 3971 when passed MCMLXXI' do
+    expect(roman_decoder("MMMCMLXXI")).to eq 3971
   end
 end

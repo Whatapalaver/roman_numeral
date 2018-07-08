@@ -28,6 +28,7 @@ def roman_decoder(roman)
     if roman.slice("D") != nil
       roman.slice!("D")
       arabic += 500
+
     end
     if roman.slice("C") != nil
       roman.slice!("C")
